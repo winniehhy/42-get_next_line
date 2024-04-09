@@ -81,7 +81,7 @@ char	*ft_get_line(char *left_str)
 		return (NULL);
 	while (left_str[i] && left_str[i] != '\n')
 		i++;
-	str = (char *)malloc(sizeof(char) * (i + 1));
+	str = (char *)malloc(sizeof(char) * (i + 2));
 	if (!str)
 		return (NULL);
 	i = 0;
