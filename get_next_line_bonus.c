@@ -1,6 +1,16 @@
-#include "get_next_line_bonus.h"
-#include <unistd.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hheng <hheng@student.42kl.edu.my>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/04/09 09:37:23 by hheng             #+#    #+#             */
+/*   Updated: 2024/04/10 18:12:13 by hheng            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
+#include "get_next_line_bonus.h"
 
 char	*ft_read_to_left_str(int fd, char *left_str)
 {
@@ -40,3 +50,4 @@ char	*get_next_line(int fd)
 	left_str[fd] = ft_new_left_str(left_str[fd]);
 	return (line);
 }
+
